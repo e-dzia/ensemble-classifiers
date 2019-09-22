@@ -12,7 +12,7 @@ if __name__ == "__main__":
     random.seed(datetime.datetime.now())
     show_mode = True
     filenames = ['iris.csv', 'pima-diabetes.csv', 'glass.csv', 'wine.csv']
-    estimators_numbers = [2, 10, 25, 50, 75, 100, 200, 300, 400, 500]
+    estimators_numbers = [2, 5, 10, 15, 20, 25, 30, 50, 100, 200, 300]
     max_features_pcts = [0.1, 0.25, 0.5, 0.75, 1.0]
     models = ['random_forest', 'boosting', 'bagging', 'tree']
     splits_sizes = [2, 3, 5, 10]

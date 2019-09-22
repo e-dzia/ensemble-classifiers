@@ -117,7 +117,7 @@ def main_single(filename, show_mode, n_estimators=100, criterion="gini", splits=
                                        max_features=max_features_pct)
     elif model == "boosting":
         base = DecisionTreeClassifier()
-        model = AdaBoostClassifier(n_estimators=n_estimators,
+        model = AdaBoostClassifier(n_estimators=n_estimators, learning_rate=max_features_pct,
                                    base_estimator=base)
     elif model == "bagging":
         base = DecisionTreeClassifier()

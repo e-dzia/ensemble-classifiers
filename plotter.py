@@ -36,7 +36,7 @@ def plot_tests(df, test, filename, dir_name="plots"):
 def plot_all_tests(filename):
     dir_name = "plots/{}".format(filename).replace("/results", "").replace(".csv", "")
     df = load_file(filename)
-    models = ['random_forest', 'boosting', 'bagging', 'base_trees']
+    models = ['random_forest', 'boosting', 'bagging', 'tree']
     tests = [('n_estimators', 'model', 'n_estimators'),
              ('max_features_pct', 'model', 'max_features_pct')]
     for model in models:
